@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kbs Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pinjamstyle.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo">
+    </div>
+    <span style="color:white">Form pengisisan</span>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="box">
+    <form class="form-container">
+      <h3> Waktu Bangun Tidur</h3>
+      <div>
+         waktu bangun tidur
+        <input type="time" name="waktubangun"> 
+      </div>
+      <div>
+        <label for="ibadah">Ibadah pagi yang dilakukan</label>
+        <input type="text" id="ibadah" name="ibadah" placeholder="Contoh: Sholat Subuh">
+         waktu ibadah
+        <input type="time" name="waktuibadah"> 
+      </div>
+      <div>
+        <label for="olahraga">Apakah kamu berolahraga</label>
+        <label class="switch" id="yesToggle">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div id="lamaolah">
+        Berapa lama berolahraga
+        <input type="number"placeholder="Contoh: 120">
+      </div>
+      <div>
+        <label for="belajar">Apakah kamu belajar</label>
+        <label class="switch" id="yeslajar">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div id="belajarmore">
+        jam belajar
+        <input type="time">
+        Durasi belajar
+        <input type="number" placeholder="60">
+      </div>
+      <div>
+        <label for="sosialisasi">Apakah kamu bersosialisasi</label>
+        <label class="switch" id="yessosial">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div id="sosialmore">
+        Contoh Sosialisasi
+        <input type="text" placeholder="Bermain dengan teman, melakukan eskul">
+        Durasi sosialisasi
+        <input type="number" placeholder="30">
+      </div>
+      <div>
+        <label for="waktu-tidur">Jam tidur malam</label>
+        <input type="time" id="waktu-tidur" name="waktu-tidur">
+      </div>
+  
+      <div>
+        <label>Apakah kamu makan makanan bergizi</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <button type="submit" class="kirim">kirim</button>
+    </form>
+  </div>
+
+
+<script src="scriptwork.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  nav {
+    background: #3A0D0D;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  nav .logo img {
+    height: 60px;
+    width: auto;
+  }
+  
+  nav span {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #FFFFFF;
+  }
+  
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+ 
+  .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+
+  .container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); 
+    backdrop-filter: blur(6px); 
+    z-index: -1;
+  }
+  
+
+  .new-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 90vh;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    z-index: 5;
+  }
+  
+.book-container{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: black ;
+    box-shadow: 0 4px 10px black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.display-box{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+    border: 10px black;
+    background-color: #FFFFFF;
+}
+.display-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+  }
+
+  .display-text{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+    border: 10px black;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    
+}

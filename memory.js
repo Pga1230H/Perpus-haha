@@ -13,10 +13,11 @@
       
       window.location.href = "mainpage.html"; // go to main page
     } else {
-      alert("Input not valid. Username must be a number between 17300 and 18380.");
+      alert("NIS tidak ditumakn");
     }
   });
 
   function goBack() {
     window.history.back();
+
   }
